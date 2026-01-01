@@ -24,11 +24,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-zinc-950 text-zinc-50">
+        <header className="border-b border-zinc-800">
+          <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+            <a href="/" className="font-semibold tracking-tight">
+              Carter Tate
+            </a>
+            <nav className="flex gap-4 text-sm text-zinc-300">
+              <a className="hover:text-zinc-50" href="/#about">About Me</a>
+              <a className="hover:text-zinc-50" href="/#projects">Projects</a>
+              <a className="hover:text-zinc-50" href="/#internship">Internship Experience</a>
+              <a className="hover:text-zinc-50" href="/#contact">Contact</a>
+              <a className="hover:text-zinc-50" href="/resume">Resume</a>
+            </nav>
+          </div>
+        </header>
+
+        <main>{children}</main>
+
+        <footer className="border-t border-zinc-800">
+          <div className="mx-auto max-w-4xl px-6 py-6 text-sm text-zinc-400">
+            © {new Date().getFullYear()} Carter Tate
+          </div>
+        </footer>
       </body>
+
     </html>
   );
 }
