@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-zinc-950 text-zinc-50">
-        <header className="border-b border-zinc-800">
+      <header className="border-b border-zinc-800 bg-zinc-950">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
             <a href="/" className="font-semibold tracking-tight">
               Carter Tate
