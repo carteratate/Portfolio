@@ -27,11 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-zinc-950 text-zinc-50">
-      <header className="border-b border-zinc-800 bg-zinc-950">
+    <html lang="en" className="bg-zinc-950">
+      <body className="min-h-screen bg-zinc-950 text-zinc-50">
+      <header
+        className="
+          sticky top-0 z-50
+          border-b border-zinc-800
+          bg-zinc-950/95 backdrop-blur
+          pt-[env(safe-area-inset-top)]
+        "
+      >
           <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-            <a href="/" className="font-semibold tracking-tight">
+            <a href="/" className="font-semibold tracking-tight text-zinc-50">
               Carter Tate
             </a>
             <nav className="flex gap-4 text-sm text-zinc-300">
