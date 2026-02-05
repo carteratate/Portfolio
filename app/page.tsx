@@ -92,7 +92,7 @@ export default function Home() {
           <p className="leading-relaxed">
             Outside of academics and projects, I spend much of my time contributing 
             to the Cornell wrestling team. Competing has taught me to be comfortable 
-            with high performance team dynamics, operaing under pressure, and 
+            with high performance team dynamics, operating under pressure, and 
             improving quickly over time with feedback loops.
           </p>
 
