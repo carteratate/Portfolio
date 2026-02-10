@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Carter Tate",
   description: "Portfolio of Carter Tate - Cornell CS student focused on building data-driven products and ML systems",
+  openGraph: {
+    title: "Carter Tate",
+    description: "Portfolio of Carter Tate - Cornell CS student focused on building data-driven products and ML systems",
+  },
+  twitter: {
+    card: "summary",
+    title: "Carter Tate",
+    description: "Portfolio of Carter Tate - Cornell CS student focused on building data-driven products and ML systems",
+  },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#09090b" },
     { media: "(prefers-color-scheme: dark)", color: "#09090b" },
