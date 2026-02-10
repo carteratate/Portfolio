@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#09090b" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Carter Tate",
   description: "Portfolio of Carter Tate - Cornell CS student focused on building data-driven products and ML systems",
@@ -24,10 +31,6 @@ export const metadata: Metadata = {
     title: "Carter Tate",
     description: "Portfolio of Carter Tate - Cornell CS student focused on building data-driven products and ML systems",
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#09090b" },
-    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
-  ],
 };
 
 export default function RootLayout({
